@@ -1,5 +1,3 @@
 
 
-export.showMsg=function () {
-    console.log("This is test");
-}
+module.export=require("./utils/lib");
