@@ -4,8 +4,15 @@ module.exports=class AntsArrayUtil{
     constructor(){
 
     }
-    static write(array ){
-        console.log(array.join("#"))
+    // 拼接
+    static write(array,split ){
+        split=split||"#";
+        return array.join(split);
+    }
+    //去重
+    static removeDuplicate(array){
+        let set=new Set(array);
+        return [...set];
     }
 
 }
