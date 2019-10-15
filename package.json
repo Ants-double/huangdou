@@ -1,0 +1,22 @@
+{
+  "name": "huangdou",
+  "version": "1.0.0",
+  "description": "antsdouble collection",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ants-double/huangdou.git"
+  },
+  "keywords": [
+    "huangdou"
+  ],
+  "author": "antsdouble",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ants-double/huangdou/issues"
+  },
+  "homepage": "https://github.com/Ants-double/huangdou#readme"
+}
