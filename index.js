@@ -1,3 +1,6 @@
 
+const AntsArrayUtil=require("./utils/lib/AntsArrayUtil.js");
+const SocketBuffer=require("./utils/lib/SockBuffer");
 
-module.export=require("./utils/lib");
+module.exports.AntsArrayUtil=AntsArrayUtil;
+module.exports.SocketBuffer=SocketBuffer;
