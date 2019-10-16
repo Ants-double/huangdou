@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Ants-double/huangdou/issues"
   },
-  "homepage": "https://github.com/Ants-double/huangdou#readme"
+  "homepage": "https://github.com/Ants-double/huangdou#readme",
+  "dependencies": {
+    "moment": "^2.24.0"
+  }
 }
