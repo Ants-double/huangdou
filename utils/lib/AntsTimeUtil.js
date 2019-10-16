@@ -5,6 +5,7 @@ module.exports = class AntsTimeUtil {
     constructor() {
 
         this.commonType = 'YYYY-MM-DD HH:mm:ss';
+        this.commonDateType='YYYY-MM-DD';
 
     }
 
