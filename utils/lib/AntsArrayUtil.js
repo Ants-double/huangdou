@@ -1,18 +1,47 @@
 
 
-module.exports=class AntsArrayUtil{
-    constructor(){
+module.exports = class AntsArrayUtil {
+    constructor() {
 
     }
     // 拼接
-    static write(array,split ){
-        split=split||"#";
-        return array.join(split);
+    static write(array, split) {
+        split = split || "#";
+        return  this.checkArray(array,(value) => {
+            return value.join(split);
+        });
     }
     //去重
-    static removeDuplicate(array){
-        let set=new Set(array);
-        return [...set];
+    static removeDuplicate(array) {
+        return this.checkArray(array,(value) => {
+            let set = new Set(value);
+            return [...set];
+        });
     }
 
+    static maxValue(array) {
+        return this.checkArray(array,(value) => {
+            return Math.max(...value);
+        });
+    }
+
+    static appendArray(array,appendArray){
+        return this.checkArray(array,(value) => {
+            return [...value,...appendArray];
+        });
+    }
+
+    // 检查是不是数组
+    static checkArray(array,callback) {
+        if (Array.isArray(array)) {
+            return callback(array);
+        }
+        else {
+            return new Array();
+        }
+    };
+
+
 }
+
+
