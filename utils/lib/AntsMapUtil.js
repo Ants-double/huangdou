@@ -61,6 +61,7 @@ module.exports = class AntsMapUtil {
             result += 'key:' + item[0] + ",value:" + item[1] + "\n";
 
         }
+        
         return result;
     }
 
